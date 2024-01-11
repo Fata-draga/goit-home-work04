@@ -16,6 +16,17 @@ body {
   color: var(--text-color-slate);
 }
 
+ul {
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
 .link {
   text-decoration: none;
   font-weight: 500;
@@ -47,6 +58,8 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-div {
@@ -70,7 +83,6 @@ img {
   padding: 24px 0;
 }
 
-
 .nav-link:hover .nav-link:focus {
   color: var(--button-hover-color);
 }
@@ -90,7 +102,8 @@ img {
   text-transform: uppercase;
   margin-right: 76px;
   display: inline-block;
-  margin-bottom: 16px;
+  /* Modificat din tema 3 */
+  /* margin-bottom: 16px; */
 }
 
 .logo-second-word {
@@ -108,6 +121,8 @@ img {
 .address-list {
   display: flex;
   gap: 40px;
+  /* adaugat in tema 4 */
+  padding-left: 251px;
 }
 
 .address:hover .address:focus {
@@ -117,6 +132,15 @@ img {
 .hero-page {
   background-color: var(--text-color-navy);
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/background-hero.jpg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .page-title {
@@ -127,6 +151,8 @@ img {
   line-height: 107.143%;
   letter-spacing: 1.12px;
   max-width: 496px;
+  /* adaugat in tema 4 */
+  margin: auto;
 }
 
 .order-button {
@@ -143,6 +169,8 @@ img {
   height: 56px;
   border: none;
   border-radius: 4px;
+  /* adaugat in tema 4 */
+  margin: auto;
 }
 
 .order-button:hover {
@@ -171,11 +199,15 @@ img {
   background-color: #404bbf;
   color: #ffffffff;
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button:focus {
   background-color: #404bbf;
   color: #ffffffff;
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
@@ -187,12 +219,39 @@ img {
 
 .portfolio-link {
   width: calc((100%-48px) / 3);
+  display: block;
+}
+
+.portfolio-link:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-link-div {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+}
+
+.section-one-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background: #f4f4fd;
+  margin-bottom: 8px;
+}
+
+.section-one-svg {
+  width: 64px;
+  height: 64px;
 }
 
 .section-one {
@@ -302,6 +361,12 @@ img {
 
 .section-three-div-names {
   padding: 32px 0;
+  display: flex;
+  width: 264px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 .names {
@@ -322,10 +387,104 @@ img {
   text-align: center;
 }
 
+.section-three-ul-list-svg {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.section-three-list-svg {
+  width: 40px;
+  height: 40px;
+}
+
+.section-three-link-svg {
+  height: 100%;
+  width: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-three-link-svg:hover {
+  background-color: #404bbf;
+}
+
+.section-three-link-svg:focus {
+  background-color: #404bbf;
+}
+
+.section-three-svg {
+  fill: #f4f4fd;
+  width: 16px;
+  height: 16px;
+}
+
 .list-employees {
   background-color: var(--main-color-white);
   width: calc((100%-72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.section-five {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section-five-title {
+  color: #2e2f42;
+  text-align: center;
+
+  margin-bottom: 72px;
+  font-family: var(--text-font-family);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 111.111%;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+.section-five-ul-list {
+  display: flex;
+  gap: 24px;
+}
+
+.section-five-list {
+  width: 168px;
+  height: 88px;
+}
+
+.section-five-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8e8f99;
+}
+
+.section-five-link:hover {
+  border-color: #404bbf;
+  color: #404bbf;
+}
+
+.section-five-link:focus {
+  border-color: #404bbf;
+  color: #404bbf;
+}
+
+.section-five-svg {
+  width: 104px;
+  height: 56px;
+  fill: currentColor;
 }
 
 .foooter-bg {
@@ -333,6 +492,14 @@ img {
   padding: 100px 0;
 }
 
+.footer-div {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-div-logo {
+  margin-right: 120px;
+}
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
@@ -341,11 +508,58 @@ img {
   max-width: 264px;
 }
 
+.social-media-text {
+  margin-bottom: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffffff;
+}
+
+.footer-ul-list-svg {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer-list-svg {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-link-svg {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-link-svg:hover {
+  background-color: #31d0aa;
+}
+
+.footer-link-svg:focus {
+  background-color: #31d0aa;
+}
+
+.footer-svg {
+  fill: #f4f4fd;
+  width: 24px;
+  height: 24px;
+}
+
 .footer-text-portfolio {
   font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.32px;
   color: var(--text-color-cloud);
+  max-width: 264px;
 }
 
 .logo-second-word-footer {
