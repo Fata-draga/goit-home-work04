@@ -70,6 +70,7 @@ img {
   padding: 24px 0;
 }
 
+
 .nav-link:hover .nav-link:focus {
   color: var(--button-hover-color);
 }
